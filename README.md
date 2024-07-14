@@ -54,7 +54,6 @@ int main() {
 
     printf("Enter a floating point number: ");
     scanf("%f", &num_float);
-
     printf("Enter a character: ");
     scanf(" %c", &ch);
 
@@ -64,6 +63,7 @@ int main() {
     printf("\n----- Results -----\n");
     printf("Integer: %d\n", num_int);
     printf("Float: %f\n", num_float);
+    printf("Float: %g\n", num_float);
     printf("Character: %c\n", ch);
     printf("String: %s\n", str);
 
@@ -81,6 +81,7 @@ Enter a string: Hello World!
 ----- Results -----
 Integer: 42
 Float: 3.140000
+Float: 3.14
 Character: A
 String: Hello World!
 ```

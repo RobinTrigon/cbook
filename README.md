@@ -38,8 +38,52 @@ Value of PI: 3.14
 Grade: A
 Fixed PI: 3.141593
 ```
+**Taking Inputs**
 
-#### Control Structures
+```c
+#include <stdio.h>
+
+int main() {
+    int num_int;
+    float num_float;
+    char ch;
+    char str[100];
+
+    printf("Enter an integer: ");
+    scanf("%d", &num_int);
+
+    printf("Enter a floating point number: ");
+    scanf("%f", &num_float);
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    printf("Enter a string: ");
+    scanf(" %[^\n]", str);
+
+    printf("\n----- Results -----\n");
+    printf("Integer: %d\n", num_int);
+    printf("Float: %f\n", num_float);
+    printf("Character: %c\n", ch);
+    printf("String: %s\n", str);
+
+    return 0;
+}
+```
+
+### Result:
+```
+Enter an integer: 42
+Enter a floating point number: 3.14
+Enter a character: A
+Enter a string: Hello World!
+
+----- Results -----
+Integer: 42
+Float: 3.140000
+Character: A
+String: Hello World!
+```
 
 **Decision Making (if, else if, else)**
 
